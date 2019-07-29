@@ -162,7 +162,7 @@ for knearest_iterations in range(max_iter_allowed):
 
 print ("Number of iterations : %d\n" %knearest_iterations_count)
 
-f = open('kmeans1.out','r+')
+f = open('kmeans1.out','w+')
 x = []
 labels = []
 
