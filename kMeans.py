@@ -183,9 +183,21 @@ centroids = new_centroid
 # reduce dimensionality
 dataMatrix = np.array(data)
 users_pca = PCA(dataMatrix) #using principal component analysis
-cutoff = users_pca.fracs[1]
-users_2d = users_pca.project(dataMatrix, minfrac=cutoff)
-centroids_2d = users_pca.project(centroids, minfrac=cutoff)
+#print(users_pca)
+#users_pca.fit(data)
+#users_2d = users_pca.transform(data)
+#centroids_2d = users_pca.transform(centroids)
+
+print(data)
+print('=====================================datamatrix===========================')
+print(dataMatrix)
+
+print('\\n\\n\\n=====================================centroids===========================')
+print(centroids)
+
+#cutoff = users_pca.fracs[1]
+#users_2d = users_pca.project(dataMatrix, minfrac=cutoff)
+#centroids_2d = users_pca.project(centroids, minfrac=cutoff)
 
 # make a plot
 colors = ['red', 'green', 'blue']
